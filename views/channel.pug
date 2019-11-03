@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title chat
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='http://localhost:3030/socket.io/socket.io.js')
+        script(src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8")
+        p#channelName(style='display:none')= channelName
+    body
+        header
+            button#toindex Back
+            p#login-info
+        div#left
+            div#ul-messages
+            input(type='text' size='20')#lineInput
+            button(type='button' name='button' id='sendButton') Send
+        div#right
+            p Chat members:
+            div#ul-members
+    div(id="loginModal" class='modal')
+        div(class='modal-content')
+            div(class='modal-header')
+                p Enter your name
+            div(class='modal-body')
+                input(type='name' id='username' placeholder='username' required )
+                br
+                button(type='button' id='myBtn')='Вход'
+    script(src='/javascripts/channel.js')

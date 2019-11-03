@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8")
+  body
+    header
+        p#login-info
+    block content
+      h1 Welcome to chat
+      ul#channels
+    div(id="loginModal" class='modal')
+        div(class='modal-content')
+            div(class='modal-header')
+                p Enter your name
+            div(class='modal-body')
+                input(type='name' id='username' placeholder='username' required )
+                br
+                button(type='button' id='myBtn')='Вход'
+  script(src="/javascripts/index.js")

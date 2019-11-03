@@ -1,0 +1,130 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: aliceblue;
+}
+li{
+  background: white;
+  border: solid cyan 1px;
+  border-radius: 1px;
+  height: 20px;
+  width: 30%;
+  padding-left: 20px;
+  margin:  10px 20px;
+  list-style-type: none;
+}
+li:hover{
+  background: darkcyan;
+}
+button{
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #1FA27B;
+}
+input{
+  padding: 10px;
+  background: white;
+  border: solid 1px lightgray;
+}
+button:hover{
+  background: #27B09C;
+}
+#toindex{
+  background: aquamarine;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+  background-color: #BEE1E7;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #1FA27B;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #27B09C;
+  color: white;
+}
+.modal-body {padding: 2px 16px;}
+.message{
+  border: solid 1px aquamarine;
+  background: white;
+  margin: 10px;
+  width: 60%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: .5s;
+  animation-name: animatetop;
+  animation-duration: .5s
+}
+.author{
+  font-size: 12px;
+}
+.text{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.time{
+  font-size: 10px;
+  float: right;
+  color: darkgray;
+}
+.li-members{
+  background: aliceblue;
+  border: none;
+}
+#login-info{
+  float: right;
+}
+#right{
+  margin-top: 30px;
+  position: absolute;
+  right: 30px;
+  border: solid 1px aquamarine;
+}
+#left{
+  position: absolute;
+  width: 90%;
+  left: 0;
+}
+#lineInput{
+  width: 60%;
+}
